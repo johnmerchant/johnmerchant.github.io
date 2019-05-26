@@ -129,6 +129,7 @@ html, body {
 .side-list__item {
     height: 1.5rem;
     padding-left: 1rem;
+    padding-right: 1rem;
     text-indent: -1rem;
 }
 
