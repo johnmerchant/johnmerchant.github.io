@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #fff !important;
     background-color: #000;
+    font-size: 1.2em;
 }
 
 html, body {
@@ -12,7 +13,7 @@ html, body {
 
 .container {
     display: grid;
-    grid-template-rows: 180px auto 5rem;
+    grid-template-rows: 12rem auto 5rem;
     grid-template-columns: auto;
     height: 100%;
     grid-template-areas: 
@@ -24,9 +25,10 @@ html, body {
 /* Common */
 
 .link {
-    color: #eee;
+    color: #d5d5d5;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.2s;
 }
 
 .link:hover {
@@ -42,6 +44,7 @@ html, body {
 
 .header {
     grid-area: header;
+    margin-left: 2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -68,26 +71,71 @@ html, body {
     grid-area: main;
 }
 
+.about {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.experience {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.timeline {
+    list-style-type: none;
+}
+
+.timeline__item {
+  border-left: 0.1rem solid #fff;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.timeline__item:hover {
+    transition: 0.2s;
+    background-color: #232323;
+}
+
+.timeline__time {
+    font-weight: 400;
+    margin-left: -2.5rem;
+    font-size: 1.2rem;
+}
+
+.timeline__item::after {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: red;
+}
+
 /* Side */
 
 .side {
     grid-area: side;
+    display: flex;
+    justify-content: center;
 }
 
 .side-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-left: 1rem;
 }
 
 .side-list__item {
     height: 1.5rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
     text-indent: -1rem;
 }
 
 .side-list__item::before {
-    padding-right: 1rem;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
 }
 
 .side-list__item--location::before {
@@ -116,13 +164,14 @@ html, body {
 
 .location {
     display: inline;
-    color: white;
+    color: #fff;
     font-style: normal;
+    font-weight: 600;
 }
 
 .location__flag {
     vertical-align:middle;
-    margin-left: 0.2rem;
+    margin-left: 0.5rem;
     width: 1rem;
     height: 1rem;
 }
@@ -134,8 +183,16 @@ html, body {
     text-align: center;
 }
 
+.license {
+    font-size: 0.7rem;
+}
+
 /* Responsive */
 @media only screen and (max-width: 600px) {
+    body {
+        font-size: 1.5em;
+    }
+
     .container {
         grid-template:
             "header"
@@ -145,7 +202,8 @@ html, body {
             "footer";
     }
 
-    .side-list {
-        align-items: center;
+    .side {
+        justify-content: center;
     }
+
 }
