@@ -1,0 +1,151 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff !important;
+    background-color: #000;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Layout */
+
+.container {
+    display: grid;
+    grid-template-rows: 180px auto 5rem;
+    grid-template-columns: auto;
+    height: 100%;
+    grid-template-areas: 
+        "header header header header"
+        "main main . side"
+        "footer footer footer footer";
+}
+
+/* Common */
+
+.link {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link:hover {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.label {
+    font-weight: bolder;
+}
+
+/* Header */
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__me  {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+}
+
+.header__title {
+    margin-left: 2rem;
+}
+
+.header__title-sub {
+    display: block;
+    font-size: 1.2rem;
+}
+
+/* Main */
+
+.main {
+    grid-area: main;
+}
+
+/* Side */
+
+.side {
+    grid-area: side;
+}
+
+.side-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-list__item {
+    height: 1.5rem;
+    padding-left: 2rem;
+    text-indent: -1rem;
+}
+
+.side-list__item::before {
+    padding-right: 1rem;
+}
+
+.side-list__item--location::before {
+    content: "🌏 ";
+}
+
+.side-list__item--email::before {
+    content: "📧 ";
+}
+
+.side-list__item--github::before {
+    content: "👨🏻‍💻 ";
+}
+
+.side-list__item--linkedin::before {
+    content: "🤵🏻 ";
+}
+
+.side-list__item--twitter::before {
+    content: "💬 ";
+}
+
+.link--email {
+    display: none;
+}
+
+.location {
+    display: inline;
+    color: white;
+    font-style: normal;
+}
+
+.location__flag {
+    vertical-align:middle;
+    margin-left: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Footer */
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template:
+            "header"
+            "side"
+            "main"
+            "main"
+            "footer";
+    }
+
+    .side-list {
+        align-items: center;
+    }
+}
