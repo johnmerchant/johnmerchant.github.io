@@ -1,6 +1,7 @@
-onReady(function() {
-
-    // spam prevention
+/**
+ * Populate anchor mailto: at runtime as a spam prevention measure
+ */
+function setEmail() {
 
     var user = 'john';
     var domain = 'merchant.on.net';
@@ -11,4 +12,6 @@ onReady(function() {
         element.innerHTML = user + '@' + domain;
         element.style.display = 'inline';
     }
-});
+}
+
+onReady(setEmail);
