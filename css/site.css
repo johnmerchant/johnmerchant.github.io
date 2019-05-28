@@ -69,26 +69,24 @@ html, body {
 
 .main {
     grid-area: main;
+    margin-left: 6rem;
+    margin-right: 3rem;
 }
 
 .about {
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
 .experience {
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
 .timeline {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .timeline__item {
   border-left: 0.1rem solid #fff;
-  padding-left: 4rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -100,8 +98,12 @@ html, body {
 
 .timeline__time {
     font-weight: 400;
-    margin-left: -2.5rem;
     font-size: 1.2rem;
+}
+
+.skills-categories {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Side */
@@ -182,21 +184,28 @@ html, body {
 }
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-device-width: 768px) {
     body {
         font-size: 1.5em;
     }
 
     .container {
-        grid-template:
-            "header"
-            "side"
-            "main"
-            "main"
-            "footer";
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        order: -2;
+    }
+
+    .main {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .side {
+        order: -1;
         justify-content: center;
     }
 
