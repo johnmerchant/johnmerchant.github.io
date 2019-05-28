@@ -264,6 +264,6 @@ html, body {
 @media (min-width: 769px) {
     .side-list {
         position: sticky;
-        top: 0;
+        top: 10%;
     }
 }
