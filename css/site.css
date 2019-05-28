@@ -63,6 +63,7 @@ html, body {
 .header__title-sub {
     display: block;
     font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 /* Main */
@@ -104,6 +105,53 @@ html, body {
 .skills-categories {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.skills-list {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.skills-list__item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 2rem;
+    text-indent: -1rem;
+}
+
+.skills-list__item::before {
+    content: "✅" ;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+
+
+.hobbies-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.hobbies-list__item::before {
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+    content: "✨ ";
+}
+
+.hobbies-list__item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 2rem;
+    text-indent: -1rem;
 }
 
 /* Side */
@@ -130,6 +178,7 @@ html, body {
 
 .side-list__item::before {
     display: inline-block;
+    text-shadow: 0 0 4px #fff;
     width: 1rem;
     margin-left: -1rem;
 }
@@ -181,13 +230,14 @@ html, body {
 
 .license {
     font-size: 0.7rem;
+    line-height: 1.4rem;
 }
 
 /* Responsive */
 
-@media only screen and (max-device-width: 768px) {
+@media (max-width: 768px) {
     body {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .container {
