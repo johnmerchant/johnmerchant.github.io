@@ -163,8 +163,6 @@ html, body {
 }
 
 .side-list {
-    position: sticky;
-    top: 0;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -261,10 +259,11 @@ html, body {
         order: -1;
         justify-content: center;
     }
+}
 
-    .sticky {
-        position: static;
-        top: auto;
+@media (min-width: 769px) {
+    .side-list {
+        position: sticky;
+        top: 0;
     }
-
 }
