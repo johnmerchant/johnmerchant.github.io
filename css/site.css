@@ -260,7 +260,11 @@ html, body {
     .side {
         order: -1;
         justify-content: center;
+    }
+
+    .sticky {
         position: static;
+        top: auto;
     }
 
 }
