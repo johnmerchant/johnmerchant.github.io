@@ -40,6 +40,28 @@ html, body {
     font-weight: bolder;
 }
 
+
+.list {
+    margin-right: auto;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.list__item {
+    margin-left: 2rem;
+    text-indent: -2rem;
+    line-height: 1.6rem;
+}
+
+.list__item::before {
+    display: inline-block;
+    width: 1rem;
+    margin-left: 1rem;
+}
+
 /* Header */
 
 .header {
@@ -74,12 +96,6 @@ html, body {
     margin-right: 3rem;
 }
 
-.about {
-}
-
-.experience {
-}
-
 .timeline {
     list-style-type: none;
     padding-left: 0;
@@ -105,53 +121,24 @@ html, body {
 .skills-categories {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: center;
 }
 
-.skills-list {
-    list-style-type: none;
-    list-style-position: outside;
-    padding: 0;
-    margin: 0;
-    margin-left: 2rem;
+.list--skills {
+    width: 25rem;
 }
 
-.skills-list__item {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    line-height: 2rem;
-    text-indent: -1rem;
+.list__item--skills {
+    margin-bottom: 0.4rem;
 }
 
-.skills-list__item::before {
+.list__item--skills::before {
     content: "✅" ;
-    display: inline-block;
-    width: 1rem;
-    margin-left: -1rem;
 }
 
-
-
-.hobbies-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 2rem;
-}
-
-.hobbies-list__item::before {
-    display: inline-block;
-    width: 1rem;
-    margin-left: -1rem;
+.list__item--hobbies::before {
     content: "✨ ";
-}
-
-.hobbies-list__item {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    line-height: 2rem;
-    text-indent: -1rem;
 }
 
 /* Side */
@@ -162,45 +149,38 @@ html, body {
     justify-content: center;
 }
 
-.side-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 1rem;
+.list--side {
     height: 8rem;
 }
 
-.side-list__item {
+.list__item--side {
     height: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     text-indent: -1rem;
 }
 
-.side-list__item::before {
-    display: inline-block;
+.list__item--side::before {
     text-shadow: 0 0 4px #fff;
-    width: 1rem;
-    margin-left: -1rem;
 }
 
-.side-list__item--location::before {
+.list__item--location::before {
     content: "🌏 ";
 }
 
-.side-list__item--email::before {
+.list__item--email::before {
     content: "📧 ";
 }
 
-.side-list__item--github::before {
+.list__item--github::before {
     content: "👨🏻‍💻 ";
 }
 
-.side-list__item--linkedin::before {
+.list__item--linkedin::before {
     content: "🤵🏻 ";
 }
 
-.side-list__item--twitter::before {
+.list__item--twitter::before {
     content: "💬 ";
 }
 
@@ -227,6 +207,8 @@ html, body {
 .footer {
     grid-area: footer;
     text-align: center;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .license {
@@ -259,11 +241,16 @@ html, body {
         order: -1;
         justify-content: center;
     }
+
+    .fotter {
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 
 @media (min-width: 769px) {
     .side-list {
         position: sticky;
-        top: 10%;
+        top: 10;
     }
 }
