@@ -92,8 +92,7 @@ html, body {
 
 .main {
     grid-area: main;
-    margin-left: 6rem;
-    margin-right: 3rem;
+    margin-left: 3rem;
 }
 
 .timeline {
@@ -145,19 +144,22 @@ html, body {
 
 .side {
     grid-area: side;
-    display: flex;
-    justify-content: center;
 }
 
 .list--side {
     height: 8rem;
+    position: sticky;
+    top: 10%;
 }
 
 .list__item--side {
     height: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    text-indent: -1rem;
+    text-indent: -1rem;    
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .list__item--side::before {
@@ -232,14 +234,24 @@ html, body {
         order: -2;
     }
 
+    .header__me {
+       padding-top: 1rem; 
+    }
+
     .main {
         margin-left: 2rem;
-        margin-right: 2rem;
     }
 
     .side {
+        display: block;
         order: -1;
         justify-content: center;
+        height: 8rem;
+    }
+
+    .list--side {
+        height: unset;
+        align-items: center;
     }
 
     .fotter {
