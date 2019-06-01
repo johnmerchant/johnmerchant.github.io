@@ -36,10 +36,17 @@ html, body {
     color: #fff;
 }
 
+.columns {
+    display: flex;
+}
+
+.columns__col {
+    width: 50%;
+}
+
 .label {
     font-weight: bolder;
 }
-
 
 .list {
     margin-right: auto;
@@ -52,6 +59,7 @@ html, body {
 
 .list__item {
     margin-left: 2rem;
+    margin-bottom: 0.4rem;
     text-indent: -2rem;
     line-height: 1.6rem;
 }
@@ -128,16 +136,16 @@ html, body {
     width: 25rem;
 }
 
-.list__item--skills {
-    margin-bottom: 0.4rem;
-}
-
 .list__item--skills::before {
     content: "✅" ;
 }
 
 .list__item--hobbies::before {
-    content: "✨ ";
+    content: "✨";
+}
+
+.list__item--projects::before {
+    content: "🛠";
 }
 
 /* Side */
@@ -167,23 +175,23 @@ html, body {
 }
 
 .list__item--location::before {
-    content: "🌏 ";
+    content: "🌏";
 }
 
 .list__item--email::before {
-    content: "📧 ";
+    content: "📧";
 }
 
 .list__item--github::before {
-    content: "👨🏻‍💻 ";
+    content: "👨🏻‍💻";
 }
 
 .list__item--linkedin::before {
-    content: "🤵🏻 ";
+    content: "🤵🏻";
 }
 
 .list__item--twitter::before {
-    content: "💬 ";
+    content: "💬";
 }
 
 .link--email {
@@ -246,6 +254,14 @@ html, body {
     .main {
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+
+    .columns {
+        flex-direction: row;
+    }
+
+    .columns__col {
+        width: 100%;
     }
 
     .side {
