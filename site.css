@@ -232,6 +232,11 @@ html, body {
 
     .header {
         order: -2;
+        min-height: 12rem;
+    }
+
+    .header__title {
+        margin-left: 1rem;
     }
 
     .header__me {
@@ -240,6 +245,7 @@ html, body {
 
     .main {
         margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .side {
