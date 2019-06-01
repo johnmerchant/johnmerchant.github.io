@@ -252,12 +252,17 @@ html, body {
     }
 
     .main {
+        margin-top: 2rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
 
+    .list--skills {
+        width: auto;
+    }
+
     .columns {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .columns__col {
