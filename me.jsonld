@@ -1,0 +1,17 @@
+{
+    "@context": "https://json-ld.org/contexts/person.jsonld",
+    "@id": "https://jmercha.github.io/",
+    "name": "John Merchant",
+    "born": "1992-04-24",
+    "image": "https://jmercha.github.io/me.jpg",
+    "email": "john@merchant.on.net",
+    "familyName": "Merchant",
+    "givenName": "John",
+    "gender": "Male",
+    "homepage": "https://jmercha.github.io/",
+    "honorificPrefix": "Mr.",
+    "jobTitle": "Software Engineer",
+    "nationality": "Australian",
+    "locality": "Melbourne",
+    "country": "Australia"
+}
