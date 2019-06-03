@@ -10,4 +10,4 @@ My personal website on the internet.
 
 * CSS naming convention: [BEM](http://getbem.com/)
 
-* [JSON-LD](https://json-ld.org/) for getting myself into Google search results
+* [JSON-LD](https://json-ld.org/) for search engine indexing
