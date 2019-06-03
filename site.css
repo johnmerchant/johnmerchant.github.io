@@ -216,6 +216,11 @@ html, body {
     height: 1rem;
 }
 
+
+.list__item--lit::before {
+    content: "📚";
+}
+
 /* Footer */
 
 .footer {
