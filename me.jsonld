@@ -1,5 +1,6 @@
 {
-    "@context": "https://json-ld.org/contexts/person.jsonld",
+    "@context": "https://schema.org/",
+    "@type": "Person",
     "@id": "https://jmercha.github.io/",
     "name": "John Merchant",
     "born": "1992-04-24",
@@ -9,8 +10,15 @@
     "givenName": "John",
     "gender": "Male",
     "homepage": "https://jmercha.github.io/",
+    "url": "https://jmercha.github.io",
+    "sameAs": [
+        "https://github.com/jmercha",
+        "https://www.linkedin.com/in/john-merchant",
+        "https://twitter.com/_jmercha"
+    ],
     "honorificPrefix": "Mr.",
     "jobTitle": "Software Engineer",
+    "alumniOf": "University of South Australia",
     "nationality": "Australian",
     "locality": "Melbourne",
     "country": "Australia"
