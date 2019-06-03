@@ -190,6 +190,10 @@ html, body {
     content: "🤵🏻";
 }
 
+.list__item--stackoverflow::before {
+    content: "📚";
+}
+
 .list__item--twitter::before {
     content: "💬";
 }
