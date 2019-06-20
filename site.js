@@ -30,12 +30,15 @@ function setEmail() {
  * Sets up the background to fade out on scroll down
  */
 function setBgScroll() {
+  var initialOpacity = 0.50;
+  setBg(initialOpacity);
   window.onscroll = function() {
-    if (window.pageYOffset > 0) {
-      var header = document.getElementsByTagName('header')[0];
-      var opacity = 1.50 - (header.offsetHeight - window.pageYOffset) / header.offsetHeight;
-      document.body.style.background = 'linear-gradient(rgba(0, 0, 0, ' + (opacity) + '), rgba(0, 0, 0, 1) 20%), url(bg.jpg), #000';
-    }
+    var header = document.getElementsByTagName('header')[0];
+    var opacity = 1.0 + initialOpacity - (header.offsetHeight - window.scrollY) / header.offsetHeight;
+    setBg(opacity)
+  }
+  function setBg(opacity) {
+    document.body.style.background = 'linear-gradient(rgba(0, 0, 0, ' + (opacity) + '), rgba(0, 0, 0, 1) 20%), url(bg.jpg), #000';
   }
 }
 
