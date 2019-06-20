@@ -3,6 +3,11 @@ body {
     color: #fff !important;
     background-color: #000;
     font-size: 1.2em;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 1) 15%), url(bg.jpg), #000;
+    background-repeat: repeat-x;
+    background-attachment: fixed !important;
+    background-size: 20% !important;
+    background-position: top left !important;
 }
 
 html, body {
@@ -238,8 +243,10 @@ html, body {
 /* Responsive */
 
 @media (max-width: 768px) {
+
     body {
         font-size: 1.2em;
+        background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 1) 20%), url(bg.jpg), #000;
     }
 
     .container {

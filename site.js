@@ -26,4 +26,18 @@ function setEmail() {
     }
 }
 
+/**
+ * Sets up the background to fade out on scroll down
+ */
+function setBgScroll() {
+  window.onscroll = function() {
+    if (window.pageYOffset > 0) {
+      var header = document.getElementsByTagName('header')[0];
+      var opacity = 1.50 - (header.offsetHeight - window.pageYOffset) / header.offsetHeight;
+      document.body.style.background = 'linear-gradient(rgba(0, 0, 0, ' + (opacity) + '), rgba(0, 0, 0, 1) 20%), url(bg.jpg), #000';
+    }
+  }
+}
+
 onReady(setEmail);
+onReady(setBgScroll);
