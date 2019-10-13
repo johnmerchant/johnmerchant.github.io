@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jmercha
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jmercha.github.io
+  * I am jmercha (https://keybase.io/jmercha) on keybase.
+  * I have a public key ASC9cac2TMXfqo1j2EkUIYFd7MyeuKjos9PF4Wv9k-disgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120bd71a7364cc5dfaa8d63d8491421815deccc9eb8a8e8b3d3c5e16bfd93e762b20a",
+      "host": "keybase.io",
+      "kid": "0120bd71a7364cc5dfaa8d63d8491421815deccc9eb8a8e8b3d3c5e16bfd93e762b20a",
+      "uid": "51958cc3d9ffe1a5b76266325e641219",
+      "username": "jmercha"
+    },
+    "merkle_root": {
+      "ctime": 1568117484,
+      "hash": "58dd2c9951f2fea0a749b860a0f6922eb79da33509d74a87b50c28a57f05480ec0bdb2ba0ce4ebf5526a9afb7a4eef364287b3e9f03c29e13c2fe873874b8fa9",
+      "hash_meta": "566117f5837205643d9d15659ac071a6d1e7c3f287ae85183c05e7bc108b87cb",
+      "seqno": 6395923
+    },
+    "service": {
+      "entropy": "yGEfUBRP3U0dQOgh6Zps9Rr7",
+      "hostname": "jmercha.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.1"
+  },
+  "ctime": 1568117491,
+  "expire_in": 504576000,
+  "prev": "7b4a8c524647c52fecbc856b5a309aac2f7a2485c3dee690e37053ed756828c2",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvXGnNkzF36qNY9hJFCGBXezMnrio6LPTxeFr/ZPnYrIKp3BheWxvYWTESpcCDcQge0qMUkZHxS/svIVrWjCarC96JIXD3uaQ43BT7XVoKMLEIFJcZPzg/kn44xsHXWWHJKvJxk/L6U80pD8W/s68VqNNAgHCo3NpZ8RAyTKKom5sepmq4dpoz09uI73zrxaVkEOXvJVPIOPY5Wb67dKZnKlBJb/5Qa5dGX5C/l1twdwqFcHQxgyfq+kzBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAGzsDPQY5xAC6RVUyd86W5w51CevpYSYTyspQ4ppdz/o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jmercha
+
+==================================================================
