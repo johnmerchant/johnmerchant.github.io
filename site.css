@@ -271,6 +271,10 @@ html, body {
     content: "💬";
 }
 
+.list__item--keybase::before {
+    content: "🔑";
+}
+
 .list__item--mastodon::before {
     content: "🐘";
 }
@@ -381,7 +385,7 @@ html, body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        height: 18.4rem;
+        height: 21rem;
     }
 
     .list--side {
