@@ -243,6 +243,10 @@ html, body {
     content: "🌏";
 }
 
+.list__item--cv::before {
+    content: "📥";
+}
+
 .list__item--email::before {
     content: "📧";
 }
@@ -251,12 +255,12 @@ html, body {
     content: "👨🏻‍💻";
 }
 
-.list__item--dev::before {
-    content: "📜";
-}
-
 .list__item--linkedin::before {
     content: "🤵🏻";
+}
+
+.list__item--dev::before {
+    content: "📜";
 }
 
 .list__item--stackoverflow::before {
@@ -265,6 +269,14 @@ html, body {
 
 .list__item--twitter::before {
     content: "💬";
+}
+
+.list__item--mastodon::before {
+    content: "🐘";
+}
+
+.list__item--omglol::before {
+    content: "🤣";
 }
 
 .link--email {
@@ -369,7 +381,7 @@ html, body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        height: 10rem;
+        height: 18.4rem;
     }
 
     .list--side {
@@ -377,6 +389,12 @@ html, body {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+    }
+
+    .list__item--side {
+        font-size: 1.4rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
     }
 
     .footer {
