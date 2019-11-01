@@ -45,6 +45,14 @@ html, body {
     display: inline-block;
 }
 
+.crypto {
+    font-size: 1rem;
+}
+
+.link--crypto {
+    color: #fff;
+}
+
 .columns {
     display: -webkit-box;
     display: -ms-flexbox;
