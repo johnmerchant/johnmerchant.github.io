@@ -45,14 +45,6 @@ html, body {
     display: inline-block;
 }
 
-.crypto {
-    font-size: 0.8rem;
-}
-
-.link--crypto {
-    color: #fff;
-}
-
 .columns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -283,14 +275,6 @@ html, body {
     content: "🔑";
 }
 
-.list__item--mastodon::before {
-    content: "🐘";
-}
-
-.list__item--omglol::before {
-    content: "🤣";
-}
-
 .link--email {
     display: none;
 }
@@ -393,7 +377,7 @@ html, body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        height: 21rem;
+        height: 18rem;
     }
 
     .list--side {
