@@ -1,4 +1,4 @@
-# jmercha.github.io
+# jmercha.dev
 
 My personal website on the internet.
 
