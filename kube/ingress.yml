@@ -14,8 +14,8 @@ spec:
     secretName: jmercha-web
   rules:
     - http:
-      paths:
-      - path: /
-        backend:
-          serviceName: jmercha-web
-          servicePort: 80
+        paths:
+        - path: /
+          backend:
+            serviceName: jmercha-web
+            servicePort: 80
