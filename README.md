@@ -12,7 +12,7 @@ It is also an outlet to showcase some of my web design skills.
 
 * Minimalistic design, just an index.html, site.css and site.js
 
-* [Semantic markup](https://html.com/semantic-markup/)! That's right! `<sections>`s, `<ul>`s and `<article>`s! The benefit of this is accessibility and search engine semantic parsing.
+* [Semantic markup](https://html.com/semantic-markup/)! That's right! `<sections>`s, `<ul>`s and `<article>`s! The benefit of this is improved accessibility and search engine semantic parsing.
 
 * Pure HTML and CSS, this allows more precise control over positioning and layout, over a framework such as Bootstrap or Foundation, at the cost of not supporting legacy browsers. Also extremely quick load times!
 
