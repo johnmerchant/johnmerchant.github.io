@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jmercha-web
+  labels:
+    app: jmercha-web
+spec:
+  selector:
+    matchLabels:
+      app: jmercha-web
+  template:
+    metadata:
+      labels:
+        app: jmercha-web
+    spec:
+      containers:
+      - name: jmercha-web
+        image: jmercha/web:latest
+        ports:
+        - containerPort: 80
+          protocol: TCP
