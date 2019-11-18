@@ -30,9 +30,13 @@ jobs:
       - run:
           name: Install kubectl
           command: |
-            if [ ! -f "./kubectl" ]; then
-              curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
-              chmod u+x ./kubectl
-            fi
+            curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+            chmod u+x ./kubectl
       - deploy: 
-          command: ./deploy.sh
+          command: |
+            ./kubectl \
+            --kubeconfig=/dev/null \
+            --server=$KUBERNETES_SERVER \
+            --insecure-skip-tls-verify=true \
+            --token=$KUBERNETES_TOKEN \
+            apply -f ./kube/
