@@ -12,7 +12,7 @@ It is also an outlet to showcase some of my web design skills.
 
 * Minimalistic design, just an index.html, site.css and site.js
 
-* Hosted on my personal [Kubernetes](https://kubernetes.io/) cluster on [DigitalOcean](https://digitalocean.com), with SSL provisioned with [cert-manager](https://github.com/jetstack/cert-manager)
+* Hosted on my personal [Kubernetes](https://kubernetes.io/) cluster on [DigitalOcean](https://digitalocean.com), with SSL certificates automatically provisioned with [cert-manager](https://github.com/jetstack/cert-manager)
 
 * [Semantic markup](https://html.com/semantic-markup/)! That's right! `<sections>`s, `<ul>`s and `<article>`s! The benefit of this is improved accessibility and search engine semantic parsing.
 
