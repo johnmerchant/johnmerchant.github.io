@@ -13,7 +13,16 @@ spec:
     - www.jmercha.dev
     secretName: jmercha-web
   rules:
-    - http:
+    - host: jmercha.dev
+      http:
+        paths:
+        - path: /
+          backend:
+            serviceName: jmercha-web
+            servicePort: 80
+
+    - host: www.jmercha.dev
+      http:
         paths:
         - path: /
           backend:
