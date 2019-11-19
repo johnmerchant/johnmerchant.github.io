@@ -15,8 +15,7 @@ spec:
     spec:
       containers:
       - name: jmercha-web
-        image: jmercha/web:latest
-        imagePullPolicy: Always
+        image: jmercha/web:$TAG
         ports:
         - containerPort: 80
           protocol: TCP
