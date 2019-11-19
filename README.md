@@ -12,6 +12,8 @@ It is also an outlet to showcase some of my web design skills.
 
 * Minimalistic design, just an index.html, site.css and site.js
 
+* Hosted on my personal [Kubernetes](https://kubernetes.io/) cluster on [DigitalOcean](https://digitalocean.com), with SSL provisioned with [cert-manager](https://github.com/jetstack/cert-manager)
+
 * [Semantic markup](https://html.com/semantic-markup/)! That's right! `<sections>`s, `<ul>`s and `<article>`s! The benefit of this is improved accessibility and search engine semantic parsing.
 
 * Pure HTML and CSS, this allows more precise control over positioning and layout, over a framework such as Bootstrap or Foundation, at the cost of not supporting legacy browsers. Also extremely quick load times!

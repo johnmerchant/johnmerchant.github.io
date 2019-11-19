@@ -120,6 +120,18 @@ html, body {
 .header__bg--img {
     background: url(bg.jpg) top center / 240px repeat-x;
     z-index: -2;
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from {
+        margin-top: -1.25em;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 .header__bg--gradient {
