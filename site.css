@@ -119,9 +119,14 @@ html, body {
 
 .header__bg--img {
     background: url(bg.jpg) top center / 240px repeat-x;
+    position: absolute;
+    left: -240px;
+    top: 0;
+    height: 100%;
+    width: 200%;
     z-index: -2;
-    -webkit-animation: fadein 1.5s;
-            animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s, 5s scroll linear infinite;
+            animation: fadein 1.5s, 5s scroll linear infinite;
 }
 
 @-webkit-keyframes fadein {
@@ -143,6 +148,24 @@ html, body {
     to {
         margin-top: 0;
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(240px, 0, 0);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(240px, 0, 0);
     }
 }
 
