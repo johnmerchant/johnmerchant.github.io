@@ -385,6 +385,7 @@ html, body {
             -ms-flex-order: -2;
                 order: -2;
         min-height: 12rem;
+        margin-top: 0;
     }
 
     .header__title {
