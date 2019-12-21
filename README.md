@@ -1,4 +1,4 @@
-# jmercha.dev
+# jmercha.dev [![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100)](https://github.com/ebidel/lighthouse-badge)
 
 My personal website on the internet.
 
