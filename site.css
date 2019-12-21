@@ -357,11 +357,6 @@ html, body {
     padding-bottom: 6em;
 }
 
-.license {
-    font-size: 0.7rem;
-    line-height: 1.4rem;
-}
-
 /* Responsive */
 
 @media (max-width: 768px) {
