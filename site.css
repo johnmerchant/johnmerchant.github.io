@@ -420,7 +420,7 @@ html, body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        height: 18rem;
+        height: 12rem;
     }
 
     .list--side {
