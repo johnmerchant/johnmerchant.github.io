@@ -10,7 +10,7 @@ It is also an outlet to showcase some of my web design skills.
 
 ## Structure and design
 
-* Minimalistic structure, just index.html, site.css and site.js along with site index
+* Minimalistic structure, just a static index.html, site.css and site.js
 
 * [Semantic markup](https://html.com/semantic-markup/). For example, `<section>`, `<ul>` and `<article>`. This structures the page content semantically, allowing for improved accessibility with screen readers and improved search engine content parsing.
 
