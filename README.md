@@ -20,4 +20,4 @@ It is also an outlet to showcase some of my web design skills.
 
 * [JSON-LD](https://json-ld.org/) for search engine indexing
 
-* Vanilla JS, utilising snippets from [You Might Not Need jQuery](http://youmightnotneedjquery.com/) 
+* Vanilla JS utilising snippets from [You Might Not Need jQuery](http://youmightnotneedjquery.com/) 
