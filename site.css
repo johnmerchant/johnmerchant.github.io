@@ -290,10 +290,6 @@ html, body {
     content: "🌏";
 }
 
-.list__item--cv::before {
-    content: "📥";
-}
-
 .list__item--email::before {
     content: "📧";
 }
