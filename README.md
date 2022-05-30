@@ -1,4 +1,4 @@
-# johnmerchant.dev
+# www.johnmerchant.dev
 
 My personal website on the internet.
 
