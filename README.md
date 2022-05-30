@@ -1,4 +1,4 @@
-# jmercha.dev
+# johnmerchant.dev
 
 My personal website on the internet.
 
