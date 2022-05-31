@@ -16,7 +16,7 @@ function onReady(fn) {
 function setEmail() {
 
     var user = 'john';
-    var domain = 'jmercha.dev';
+    var domain = 'johnmerchant.dev';
     var elements = document.getElementsByClassName('link--email');
 
     for (var i = 0; i < elements.length; ++i) {
