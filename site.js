@@ -22,7 +22,7 @@ function setEmail() {
     for (var i = 0; i < elements.length; ++i) {
         var element = elements[i];
         element.setAttribute('href', 'mailto:' + user + '@' + domain);
-        element.innerHTML = user + '@' + domain;
+        element.innerHTML = 'Email';
         element.style.display = 'inline';
     }
 }
