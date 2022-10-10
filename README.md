@@ -14,7 +14,7 @@ It is also an outlet to showcase some of my web design skills.
 
 * [Semantic markup](https://html.com/semantic-markup/). For example, `<section>`, `<ul>` and `<article>`. This structures the page content semantically, allowing for improved accessibility with screen readers and improved search engine content parsing.
 
-* Pure HTML and CSS. This allows more precise control over positioning and layout over a framework such as Tailwind or Bootstrap at the cost of not supporting legacy browsers.
+* Pure HTML and CSS. This allows more precise control over positioning and layout over a framework such as Bootstrap at the cost of not supporting legacy browsers.
 
 * CSS naming convention: [BEM](http://getbem.com/)
 
