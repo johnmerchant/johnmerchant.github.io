@@ -310,7 +310,7 @@ html, body {
     content: "📚";
 }
 
-.list__item--twitter::before {
+.list__item--mastodon::before {
     content: "💬";
 }
 
