@@ -2,12 +2,6 @@
 
 My personal website on the internet.
 
-## Rationale
-
-My website helps me keep track of my own accomplishments as a dev and lets my friends, family and colleagues know what I've been up to recently.
-
-It is also an outlet to showcase some of my web design skills.
-
 ## Structure and design
 
 * Minimalistic structure, just a static index.html, site.css and site.js
