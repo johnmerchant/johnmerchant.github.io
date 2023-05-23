@@ -314,6 +314,10 @@ html, body {
     content: "💬";
 }
 
+.list__item--twitter::before {
+    content: "🐦";
+}
+
 .link--email {
     display: none;
 }
